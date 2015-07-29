@@ -1,1 +1,55 @@
+\documentclass{ximera}
+\title{The Product Rule}
+\begin{document}
+\maketitle
+ 
+ \setcounter{chapter}{3}
+\setcounter{section}{1}
+\section{The Product Rule}
+\subsection*{Goals and Objectives}
+
+\textsc{Goals.} The goal of this module is about developing both a conceptual and computational understanding of the product rule and of its applications to dynamical systems. At the same time, you will develop the ability to prove the validity of the rule and to generalize it to other rules of differentiation.
+\\
+
+\noindent \textsc{Objectives.} At the completion of this module you will be able to
+\begin{enumerate}
+\item Use the rule to compute derivatives of different functions.
+\item Generalize the rule.
+\item Apply the rule in the context of dynamical systems.
+\item Prove the validity of the rule and its generalizations, including the quotient rule.
+\item Apply the new rules in different contexts.
+\item Prove the formula of integration by parts. Use this formula to compute indefinite integrals.
+\end{enumerate}
+
+%\newpage
+\subsection{Using the Product Rule to Compute Derivatives}\label{prodRule-subsec1}
+
+\begin{theorem}[The Product Rule] If \(f\) and \(g\) are both differentiable on \((a,b)\), then
+ \[(f g)'(x)= f'(x) g(x)+ f(x) g'(x)\,,  \;\;\;  \text{ for all } \; x \in (a,b)\,.\]
+\end{theorem}
+Here we assume this rule to be valid, and use it to compute the derivative of various functions. A proof of the rule is provided in \ref{prodRule-subsec7}.
+
+
+\begin{example} \rm{Compute the derivative of \(h(x)=x^2 e^x\). }\label{productRule-1-ex01}\end{example}
+
+\textit{Solution} Here \(f(x)=x^2\) and \(g(x)=e^x\)
+\[\begin{array}{cccccc}
+ (f g)'(x) & = & f'(x) g(x) & + & f(x) g'(x) &   \\
+ \displaystyle \frac{d}{d x}\left(x^2 e^x\right) & = & \displaystyle  \left(\frac{d}{d x}x^2\right)e^x & + & \displaystyle  x^2\frac{d}{d x}e^x & =2x e^x+x^2e^x=x e^x(2+x)
+\end{array}\]
+
+\begin{example} \rm{ Find \(\displaystyle \frac{d}{d x} e^x\sin  x\).}\label{productRule-1-ex02}\end{example} 
+
+\noindent \textit{Solution. }  Here \(f(x)=e^x\) and \(g(x)=\sin  x\).
+\[\begin{array}{cccccc}
+ (f g)'(x) & = & f'(x) g(x) & + & f(x) g'(x) &   \\
+ \displaystyle  \frac{d}{d x}\left( e^x\sin  x\right)  & = & \displaystyle  \left(\frac{d}{d x}e^x\right)\sin  x & + &  \displaystyle e^x\frac{d}{d x}\sin  x & \displaystyle  =e^x\sin  x+e^x\cos  x=e^x(\sin
+ x+\cos  x) 
+\end{array}\]
+
+ 
+ 
+\begin{problem}Find the critical numbers of the function \(\displaystyle f(x) = (x-13)^2\left(x+\frac{7}{2}\right)-36x\) \\ $\answer{1}$,  $\answer{14}$\\ \textbf{Directions.} Write the critical numbers in increasing order. No spaces, commas separating the critical numbers.\end{problem} 
+
+\end{document}
 
